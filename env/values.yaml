@@ -32,27 +32,31 @@ prow: {}
 #   - notifications-app
 
 # naive workaround. expose the Env var to EVERY application seperately
+
+py-envtest:
+  env:
+    CLUSTER_NAMESPACE: dairyforge-devtest
+
+dspl-guetedaten-app:
+  env:
+    CLUSTER_NAMESPACE: "dairyforge-devtest"
+dspl-userdetails-app:
+  env:
+    CLUSTER_NAMESPACE: "dairyforge-devtest"
+dspl-documents-app:
+  env:
+    CLUSTER_NAMESPACE: "dairyforge-devtest"
+
+consistency-app:
+  env:
+    CLUSTER_NAMESPACE: "dairyforge-devtest"
+interchange-app:
+  env:
+    CLUSTER_NAMESPACE: "dairyforge-devtest"
+notifications-app:
+  env:
+    CLUSTER_NAMESPACE: "dairyforge-devtest"
+
 dspl-frontend-app:
   env:
-    CLUSTER_NAMESPACE: dairyforge-devtest
- dspl-guetedaten-app:
-  env:
-    CLUSTER_NAMESPACE: dairyforge-devtest
- dspl-userdetails-app:
-  env:
-    CLUSTER_NAMESPACE: dairyforge-devtest
- dspl-documents-app:
-  env:
-    CLUSTER_NAMESPACE: dairyforge-devtest
- consistency-app:
-  env:
-    CLUSTER_NAMESPACE: dairyforge-devtest
- interchange-app:
-  env:
-    CLUSTER_NAMESPACE: dairyforge-devtest
- notifications-app:
-  env:
-    CLUSTER_NAMESPACE: dairyforge-devtest
- py-envtest:
-  env:
-    CLUSTER_NAMESPACE: dairyforge-devtest
+    CLUSTER_NAMESPACE: "dairyforge-devtest"
