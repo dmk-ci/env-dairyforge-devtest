@@ -20,3 +20,39 @@ jenkins:
   Servers:
     Global: {}
 prow: {}
+
+# maybe it's possible to use this list in a loop (range)
+# dsplApps:
+#   - dspl-guetedaten-app
+#   - dspl-notifications-app
+#   - dspl-userdetails-app
+#   - dspl-documents-app
+#   - consistency-app
+#   - interchange-app
+#   - notifications-app
+
+# naive workaround. expose the Env var to EVERY application seperately
+dspl-frontend-app:
+  env:
+    CLUSTER_NAMESPACE: dairyforge-devtest
+ dspl-guetedaten-app:
+  env:
+    CLUSTER_NAMESPACE: dairyforge-devtest
+ dspl-notifications-app:
+  env:
+    CLUSTER_NAMESPACE: dairyforge-devtest
+ dspl-userdetails-app:
+  env:
+    CLUSTER_NAMESPACE: dairyforge-devtest
+ dspl-documents-app:
+  env:
+    CLUSTER_NAMESPACE: dairyforge-devtest
+ consistency-app:
+  env:
+    CLUSTER_NAMESPACE: dairyforge-devtest
+ interchange-app:
+  env:
+    CLUSTER_NAMESPACE: dairyforge-devtest
+ notifications-app:
+  env:
+    CLUSTER_NAMESPACE: dairyforge-devtest
