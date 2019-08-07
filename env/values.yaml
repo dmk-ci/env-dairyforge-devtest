@@ -38,9 +38,6 @@ dspl-frontend-app:
  dspl-guetedaten-app:
   env:
     CLUSTER_NAMESPACE: dairyforge-devtest
- dspl-notifications-app:
-  env:
-    CLUSTER_NAMESPACE: dairyforge-devtest
  dspl-userdetails-app:
   env:
     CLUSTER_NAMESPACE: dairyforge-devtest
@@ -54,5 +51,8 @@ dspl-frontend-app:
   env:
     CLUSTER_NAMESPACE: dairyforge-devtest
  notifications-app:
+  env:
+    CLUSTER_NAMESPACE: dairyforge-devtest
+ py-envtest:
   env:
     CLUSTER_NAMESPACE: dairyforge-devtest
